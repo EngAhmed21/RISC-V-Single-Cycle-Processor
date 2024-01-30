@@ -1,0 +1,32 @@
+03290913  // addi s2, s2, 50
+02898993  // addi s3, s3, 40
+03228293  // addi t0, t0, 50
+025A0063  // beq s4, t0, end
+013904B3  // add s1, s2, s3
+009AA023  // sw s1, 0(s5)
+00190913  // addi s2, s2, 1
+FFE98993  // addi s3, s3, -2
+00000013  // addi zero, zero, 0
+001A0A13  // addi s4, s4, 1
+FE5FF0EF  // jal ra, loop
+ABCDE4B7  // lui s1, 0xABCDE
+009AA023  // sw s1, 0(s5)
+
+03248493  // addi s1, s1, 50
+02890913  // addi s2, s2, 40
+FC498993  // addi s3, s3, -60
+00990A33  // add s4, s1, s2
+01402023  // sw s4, 0(ZERO)
+40990A33  // sub s4, s2, s1
+01402023  // sw s4, 0(ZERO)
+01392A33  // slt s4, s3, s2
+01402023  // sw s4, 0(ZERO)
+01393A33  // sltu s4, s3, s2
+01402023  // sw s4, 0(ZERO)
+01397A33  // and s4, s3, s2
+01402023  // sw s4, 0(ZERO)
+00996A33  // or s4, s1, s2
+01402023  // sw s4, 0(ZERO)
+
+ABCDE497  // auipc s1, 0xABCDE
+009AA023  // sw s1, 0(s5)
